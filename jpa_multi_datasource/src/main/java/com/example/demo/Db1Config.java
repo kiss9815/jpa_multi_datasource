@@ -65,6 +65,10 @@ public class Db1Config extends HikariConfig {
         dataSource.setUsername(env.getProperty("db1.datasource.username"));
         dataSource.setPassword(env.getProperty("db1.datasource.password"));
         
+//        dataSource.setTestWhileIdle(testWhileIdle);     
+//        dataSource.setTimeBetweenEvictionRunsMillis(timeBetweenEvictionRunsMills);
+//        dataSource.setValidationQuery(validationQuery);
+        
         return dataSource;
     }
  
